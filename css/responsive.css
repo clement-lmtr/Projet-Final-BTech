@@ -1,0 +1,172 @@
+/* Responsive Téléphone */
+
+@media only screen and (max-width: 426px) and (min-width: 320px) {
+
+    h2 {
+        font-size: 25px;
+    }
+
+    header {
+        /*position: absolute;*/
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .header-logo {
+        display: none;
+    }
+
+    .header-nav-reseau {
+        display: none;
+    }
+
+    .main-header {
+        height: 30vh;
+        gap: 30px;
+    }
+
+    .hero {
+        height: 70vh;
+        margin-bottom: 120px;
+    }
+
+    .hero-logo-name {
+        padding-top: 10px;
+        gap: 10px;
+        height: 100%;
+    }
+
+    .hero-logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .presentation {
+        height: auto;
+        width: 100%;
+        border-radius: 0;
+        margin: 30px 0;
+    }
+
+    .img-pres {
+        display: none;
+    }
+
+    .realisation-flash {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .placement-img {
+        justify-content: space-around;
+        object-fit: cover;
+        gap: 0px;
+    }
+
+    .placement-img img {
+        width: 80px;
+        height: 120px;
+    }
+
+    footer {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    /* Page 2 */
+
+    .all-img {
+        width: 95%;
+        column-count: 2;
+    }
+
+    .nav-theme {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .theme-img {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .theme-img img {
+        width: 100px;
+        height: 150px;
+    }
+
+    .decalage-header {
+        height: 30vh;
+    }
+
+    /* Page 3 */
+
+    .main-reservation {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .prerequis {
+        margin: 10px;
+        width: 90%;
+        gap: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .prerequis p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .formulaire {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+
+    .placement-form {
+        flex-direction: column;
+    }
+
+    .text-form {
+        width: 90%;
+    }
+
+    .glisser-img p,
+    input {
+        font-size: 10px;
+        width: auto;
+    }
+
+    .formulaire-envoye {
+        width: 100%;
+        gap: 10px;
+        border-radius: 0;
+    }
+
+    .size-form-sent {
+        font-size: 15px;
+    }
+}

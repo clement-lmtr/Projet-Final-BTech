@@ -1,0 +1,154 @@
+.main-reservation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.center-h2 {
+    text-align: center;
+}
+
+.prerequis {
+    margin: 30px;
+    height: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.prerequis p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.formulaire {
+    padding: 15px;
+    background-color: #0b1f3a;
+    width: 85vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+.placement-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.text-form {
+    width: 45%;
+    color: white;
+}
+
+.text-form input {
+    color: gray;
+    width: 100%;
+}
+
+.input-file {
+    color: white;
+}
+
+.mail-des {
+    color: white;
+
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.glisser-img {
+    padding: 15px;
+    width: 100%;
+    border: 2px dashed white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.glisser-img p,
+input {
+    font-size: 20px;
+    width: auto;
+}
+
+.btn-sent {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.btn-sent:hover {
+    transform: scale(1.2);
+}
+
+.size-form-sent {
+    font-size: 30px;
+}
+
+.formulaire-envoye {
+    padding: 15px;
+    background-color: #0b1f3a;
+    width: 85vw;
+    height: auto;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.size-valider {
+    width: 50px;
+    height: 50px;
+}
+
+* input[type="checkbox"] {
+    display: none;
+}
+
+#success-message {
+    display: none;
+    text-align: center;
+}
+
+input[type="checkbox"]:checked~.formulaire {
+    display: none;
+}
+
+input[type="checkbox"]:checked~#success-message {
+    display: flex;
+}
