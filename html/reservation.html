@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Un site de réservation pour tatoueurs comprenant une brève introduction, des exemples de projets réalisés, des idées de dessins, ainsi qu'un formulaire final pour la prise de rendez-vous.">
+    <meta name="keywords"
+        content="Tattoo, Réservation, salon de tatouage, tatoueur professionnel, rendez-vous tattoo en ligne, Tatouage">
+    <meta name="author" content="Clem .L">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/logo.png">
+    <title>Sweet Navy Tattoo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/realisation.css">
+    <link rel="stylesheet" href="../css/reservation.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <img class="header-logo" src="../img/logo.png" alt="Logo">
+        <nav class="header-nav">
+            <a class="header-nav-link" href="./index.html">Accueil</a>
+            <a class="header-nav-link" href="./realisation.html">Réalisations</a>
+            <a class="header-nav-link" href="./realisation.html">Flashs</a>
+            <a class="header-nav-link actif" href="#top-page">Réservation</a>
+        </nav>
+        <nav class="header-nav-reseau">
+            <a href="https://www.instagram.com/sweetnavytattoo/" target="_blank"><img class="icon-reseau"
+                    src="../img/insta.png" alt="Logo Instagram, Sur Flaticon"></a>
+            <a href="https://www.tiktok.com/@sweetnavytattoo" target="_blank"><img class="icon-reseau"
+                    src="../img/tiktok.png" alt="Logo TikTok, Sur Flaticon"></a>
+            <a href="https://www.facebook.com/profile.php?id=61576623074241" target="_blank"><img class="icon-reseau"
+                    src="../img/facebook.png" alt="Logo Facebook, Sur Flaticon"></a>
+        </nav>
+    </header>
+    <main>
+        <section class="main-header" id="top-page"></section>
+        <h2 class="center-h2">Réservation</h2>
+        <section class="main-reservation">
+            <article class="prerequis">
+                <h4>À Ne pas Oublier</h4>
+                <p>En France, le tatouage est autorisé à partir de 18 ans. Pour les mineurs, il peut être réalisé dès 16
+                    ans
+                    uniquement sur présentation d'une autorisation écrite du représentant légal (parent ou tuteur), la
+                    présence de ce dernier pouvant être exigée le jour de la séance. Une pièce d'identité valide peut
+                    être
+                    demandée afin de vérifier l'âge et la conformité des documents. Le tatoueur se réserve le droit de
+                    refuser toute prestation si les conditions légales ou de sécurité ne sont pas réunies.</p>
+                <p>Le client doit être en bon état de santé le jour du rendez-vous. La séance ne pourra pas être
+                    effectuée
+                    en cas de fièvre, d'infection, de lésion cutanée, de coup de soleil ou d'irritation sur la zone à
+                    tatouer. Il est également indispensable d'éviter l'alcool et les substances fluidifiant le sang dans
+                    les
+                    24 heures précédentes, d'être reposé, d'avoir mangé et d'être correctement hydraté.</p>
+                <p>Enfin, le tatouage étant un acte permanent, une réflexion préalable sur le motif, l'emplacement et
+                    l'orthographe (pour les textes) est essentielle. Le respect rigoureux des soins post-tatouage est
+                    obligatoire afin d'assurer une bonne cicatrisation, prévenir les infections et garantir un résultat
+                    durable.</p>
+            </article>
+            <input type="checkbox" id="msg-envoye">
+            <form class="formulaire">
+                <div class="placement-form">
+                    <div class="text-form">
+                        <p>Nom</p>
+                        <textarea rows="1" name="nom" placeholder="Nom" required></textarea>
+                    </div>
+                    <div class="text-form">
+                        <p>Prénom</p>
+                        <textarea rows="1" name="prenom" placeholder="Prénom" required></textarea>
+                    </div>
+                    <div class="text-form">
+                        <p>Date De Naissance</p>
+                        <input type="date" value="2026-02-23" required>
+                    </div>
+                    <div class="text-form">
+                        <p>Numero de téléphone</p>
+                        <textarea rows="1" name="telephone" placeholder="01 23 45 67 89" required></textarea>
+                    </div>
+                    <div class="mail-des">
+                        <p>Votre e-mail</p>
+                        <textarea rows="1" name="email" placeholder="votre.adresse@mail.com" required></textarea>
+                    </div>
+                </div>
+                <div class="mail-des">
+                    <p>Votre Projet</p>
+                    <textarea rows="10" placeholder="Description du Projet" required></textarea>
+                </div>
+                <div class="glisser-img">
+                    <p>Glisser Votre Image</p>
+                    <p>ou</p>
+                    <input class="input-file" type="file" accept="image/png, image/jpeg" required />
+                </div>
+                <label for="msg-envoye" class="btn-sent">Envoyer Formulaire</label>
+            </form>
+            <div class="formulaire-envoye" id="success-message">
+                <img class="size-valider" src="../img/verifier.png" alt="Icone valider, Flaticon">
+                <p class="size-form-sent">Formulaire Bien Envoyé</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <article class="article-footer">
+            <h3 class="h3-footer">Horaires</h3>
+            <p>Ouvert du lundi au samedi de 10h à 18h</p>
+            <p class="important">Uniquement sur rendez-vous</p>
+        </article>
+        <article class="article-footer">
+            <h3 class="h3-footer">Adresse</h3>
+            <p>48 rue de la paix</p>
+            <p>59840 Pérenchies</p>
+            <p class="important">Transport en commun a proximité</p>
+        </article>
+        <article class="article-footer">
+            <h3 class="h3-footer">Contact</h3>
+            <div class="footer-rs">
+                <img class="icon-reseau" src="../img/enveloppe.png" alt="Logo Mail, Flaticon">
+                <p>marinelanglet6@gmail.com</p>
+            </div>
+            <a class="important btn-important" href="../html/reservation.html">Via Page Réservation</a>
+        </article>
+        <article>
+            <h3 class="h3-footer">Réseau Sociaux</h3>
+            <a class="footer-rs" href="https://www.instagram.com/sweetnavytattoo/" target="_blank"><img
+                    class="icon-reseau" src="../img/insta.png" alt="Logo instagram, Sur Flaticon">
+                @sweetnavytattoo</a>
+            <a class="footer-rs" href="https://www.facebook.com/profile.php?id=61576623074241" target="_blank"><img
+                    class="icon-reseau" src="../img/facebook.png" alt="Logo Facebook, sur Flaticon">
+                @sweetnavytattoo</a>
+            <a class="footer-rs" href="https://www.tiktok.com/@sweetnavytattoo" target="_blank"><img class="icon-reseau"
+                    src="../img/tiktok.png" alt="Logo Tiktok, Sur Flaticon">
+                @sweetnavytattoo</a>
+        </article>
+    </footer>
+</body>
+
+</html>
